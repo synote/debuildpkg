@@ -16,3 +16,8 @@ dh_python3(1).
 
 
 the debmake command sets “Architecture: all” and “Multi-Arch: foreign”
+
+
+```
+debuild
+```
