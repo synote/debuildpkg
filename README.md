@@ -1,4 +1,4 @@
-# basic rules of Debian packaging
+## basic rules of Debian packaging
 
 ## Big picture of package building
 
