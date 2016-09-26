@@ -1,0 +1,6 @@
+debhello (1.1-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- vserv <vserv@localhost>  Tue, 27 Sep 2016 00:46:07 +0800
