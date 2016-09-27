@@ -10,7 +10,7 @@ Files: ./README.md
 	./debian/control
 	./scripts/hello
 	./hello_py/__init__.py
-# licensecheck(1): ./README.md: *No copyright* UNKNOWN
+# licensecheck(1): ./README.md: *No copyright* GENERATED FILE
 License: NO_LICENSE_TEXT_FOUND
 
 #----------------------------------------------------------------------------

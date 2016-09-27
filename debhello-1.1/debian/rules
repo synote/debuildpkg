@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # See debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
-export DH_VERBOSE = 1
+#DH_VERBOSE = 1
 # exclude VCS paths if needed.
 #DH_ALWAYS_EXCLUDE=CVS:.svn:.git
 
@@ -14,7 +14,7 @@ export DH_VERBOSE = 1
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-		dh $@ --with "python3,python2"
+		dh $@ --with "python2,python3"
 
 # debmake generated override targets
 # special work around for python3 (#538978 and #597105 bugs)

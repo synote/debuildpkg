@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # vi:se ts=4 sts=4 et ai:
 
-from setuptools import setup
+from distutils.core import setup
 
 setup(name='debhello',
     version='4.0',
