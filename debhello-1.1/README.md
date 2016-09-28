@@ -21,3 +21,7 @@ the debmake command sets “Architecture: all” and “Multi-Arch: foreign”
 ```
 debuild
 ```
+
+```
+dpkg-buildpackage -rfakeroot -D -us -uc
+```
