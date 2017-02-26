@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 # vi:se ts=4 sts=4 et ai:
 
-from distutils.core import setup
+from setuptools import setup
+from setuptools import find_packages
+packages=find_packages('.')
+print('find package:%s', packages)
 
 setup(name='debhello',
     version='4.0',
@@ -10,7 +13,7 @@ setup(name='debhello',
     author='Osamu Aoki',
     author_email='osamu@debian.org',
     url='http://people.debian.org/~osamu/',
-    packages=['hello_py'],
+    packages=packages,
     package_dir={'hello_py': 'hello_py'},
     scripts=['scripts/hello'],
     classifiers = ['Development Status :: 3 - Alpha',
@@ -22,6 +25,9 @@ setup(name='debhello',
         'Programming Language :: Python :: 3',
         'Topic :: Utilities',
     ],
+    entry_points = {
+        'console_scripts': ['hello-version=hello_py.version:get_version'],
+    },
     platforms   = 'POSIX',
     license     = 'MIT License'
 )
